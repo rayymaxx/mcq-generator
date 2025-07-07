@@ -13,9 +13,9 @@ from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
 from src.mcqgenerator.logger import logging
 
 
+json_path = os.path.join(os.path.dirname(__file__), 'Response.json')
 
-# loading json file
-with open(r'C:\Users\NRCF\Desktop\mcq-generator\Response.json', 'r') as file:
+with open(json_path, 'r') as file:
     RESPONSE_JSON = json.load(file)
 
 # creating a title for the app
